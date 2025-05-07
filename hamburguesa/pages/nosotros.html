@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Burger House</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="nosotros.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
+                        url('../fondo1.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="../index.html">
+                <img class="logo-1" src="../logo.svg" alt="Logo">
+            </a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="../menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="nosotros.html" class="active">Acerca De Nosotros</a></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="nosotros-container">
+            <div class="nosotros-header">
+                <h1>Nosotros</h1>
+                <p>Conoce más sobre Burger House y únete a nuestra familia</p>
+            </div>
+
+            <div class="nosotros-grid">
+                <div class="nosotros-card">
+                    <h3>Historia</h3>
+                    <p>Desde 2010, Burger House ha sido sinónimo de calidad y sabor en la industria de hamburguesas gourmet. Nuestra pasión por la comida nos ha llevado a crear experiencias únicas para nuestros clientes.</p>
+                </div>
+                <div class="nosotros-card">
+                    <h3>Equipo</h3>
+                    <p>Contamos con un equipo apasionado y profesional, dedicado a ofrecer el mejor servicio y las hamburguesas más deliciosas de la ciudad.</p>
+                </div>
+                <div class="nosotros-card">
+                    <h3>Valores</h3>
+                    <p>Calidad, innovación y satisfacción del cliente son los pilares fundamentales que guían nuestro trabajo diario.</p>
+                </div>
+            </div>
+
+            <div class="nosotros-form">
+                <h2>Contáctanos</h2>
+                <form id="contactForm" action="https://formsubmit.co/mauriciocardona402@gmail.com" method="POST">
+                    <div class="form-group">
+                        <label for="contact-name">Nombre Completo</label>
+                        <input type="text" id="contact-name" name="nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-email">Correo Electrónico</label>
+                        <input type="email" id="contact-email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-subject">Asunto</label>
+                        <select id="contact-subject" name="asunto" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="trabajo">Quiero trabajar en Burger House</option>
+                            <option value="sugerencia">Sugerencia</option>
+                            <option value="reclamo">Reclamo</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-message">Mensaje</label>
+                        <textarea id="contact-message" name="mensaje" required></textarea>
+                    </div>
+
+                    <button type="submit" class="form-submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer container">
+        <img class="logo-2" src="../logo.svg" alt="">
+        <div class="links">
+            <h4>Menú</h4>
+            <ul>
+                <li><a href="hamburguesas.html">Hamburguesas</a></li>
+                <li><a href="burritos.html">Burritos</a></li>
+                <li><a href="complementos.html">Complementos</a></li>
+                <li><a href="bebidas.html">Bebidas</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Servicios</h4>
+            <ul>
+                <li><a href="forms.html">Delivery</a></li>
+                <li><a href="forms.html">Para Llevar</a></li>
+                <li><a href="forms.html">Reservaciones</a></li>
+                <li><a href="forms.html">Eventos</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Nosotros</h4>
+            <ul>
+                <li><a href="nosotros.html">Historia</a></li>
+                <li><a href="nosotros.html">Equipo</a></li>
+                <li><a href="nosotros.html">Trabaja con Nosotros</a></li>
+                <li><a href="nosotros.html">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html> 

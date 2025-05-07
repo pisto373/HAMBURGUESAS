@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburguesas - Burger House</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="pages.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
+                        url('../fondohamburguesas.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .products-page {
+            background: none;
+        }
+        .products-page::before {
+            background: none;
+        }
+        .product-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .product-price {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #e53935 0%, #ff1744 100%);
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 18px;
+            padding: 4px 18px;
+            margin: 0;
+            box-shadow: 0 2px 10px rgba(229, 57, 53, 0.18);
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.18);
+            letter-spacing: 1px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            position: absolute;
+            right: 10px;
+            top: 20px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="../index.html">
+                <img class="logo-1" src="../logo.svg" alt="Logo">
+            </a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="../menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="hamburguesas.html" class="active">Hamburguesas</a></li>
+                        <li><a href="burritos.html">Burritos</a></li>
+                        <li><a href="complementos.html">Complementos</a></li>
+                        <li><a href="bebidas.html">Bebidas</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="products-page">
+        <div class="container">
+            <h1>Nuestras Hamburguesas</h1>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image" style="position: relative;">
+                        <span class="product-price">120.00 Lps</span>
+                        <img src="../slider1.png" alt="Hamburguesa Clásica">
+                    </div>
+                    <div class="product-info">
+                        <h3>Hamburguesa Clásica</h3>
+                        <p>Jugosa carne de res, queso cheddar, lechuga fresca, tomate y nuestra salsa especial.</p>
+                        <button class="btn-1" onclick="window.location.href='ordenar.html'">Ordenar Ahora</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" style="position: relative;">
+                        <span class="product-price">180.00 Lps</span>
+                        <img src="../slider2.png" alt="Mega Burger">
+                    </div>
+                    <div class="product-info">
+                        <h3>Mega Burger</h3>
+                        <p>Doble carne, doble queso, tocino crujiente, aros de cebolla y nuestra deliciosa salsa BBQ.</p>
+                        <button class="btn-1" onclick="window.location.href='ordenar.html'">Ordenar Ahora</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image" style="position: relative;">
+                        <span class="product-price">150.00 Lps</span>
+                        <img src="../slider3.png" alt="Chicken Burger">
+                    </div>
+                    <div class="product-info">
+                        <h3>Chicken Burger</h3>
+                        <p>Pechuga de pollo empanizada, queso suizo, lechuga romana y mayonesa especial.</p>
+                        <button class="btn-1" onclick="window.location.href='ordenar.html'">Ordenar Ahora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer container">
+        <img class="logo-2" src="../logo.svg" alt="">
+        <div class="links">
+            <h4>Menú</h4>
+            <ul>
+                <li><a href="hamburguesas.html">Hamburguesas</a></li>
+                <li><a href="burritos.html">Burritos</a></li>
+                <li><a href="complementos.html">Complementos</a></li>
+                <li><a href="bebidas.html">Bebidas</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Servicios</h4>
+            <ul>
+                <li><a href="forms.html">Delivery</a></li>
+                <li><a href="forms.html">Para Llevar</a></li>
+                <li><a href="forms.html">Reservaciones</a></li>
+                <li><a href="forms.html">Eventos</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Nosotros</h4>
+            <ul>
+                <li><a href="nosotros.html">Historia</a></li>
+                <li><a href="nosotros.html">Equipo</a></li>
+                <li><a href="nosotros.html">Trabaja con Nosotros</a></li>
+                <li><a href="nosotros.html">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html> 

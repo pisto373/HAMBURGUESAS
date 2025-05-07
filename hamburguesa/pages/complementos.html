@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complementos - Burger House</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="pages.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
+                        url('../fondocomplementos.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .products-page {
+            background: none;
+        }
+        .products-page::before {
+            background: none;
+        }
+        .product-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="../index.html">
+                <img class="logo-1" src="../logo.svg" alt="Logo">
+            </a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="../menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="hamburguesas.html">Hamburguesas</a></li>
+                        <li><a href="burritos.html">Burritos</a></li>
+                        <li><a href="complementos.html" class="active">Complementos</a></li>
+                        <li><a href="bebidas.html" >Bebidas</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="products-page">
+        <div class="container">
+            <h1>Nuestros Complementos</h1>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-price">95.00 Lps</span>
+                        <img src="../food7.png" alt="Papas Supreme">
+                    </div>
+                    <div class="product-info">
+                        <h3>Papas Supreme</h3>
+                        <p>Papas fritas cubiertas con queso cheddar derretido, tocino crujiente y jalapeños.</p>
+                        <button class="btn-1" onclick="window.location.href='ordenar.html'">Ordenar Ahora</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-price">85.00 Lps</span>
+                        <img src="../food8.png" alt="Aros de Cebolla">
+                    </div>
+                    <div class="product-info">
+                        <h3>Aros de Cebolla</h3>
+                        <p>Aros de cebolla empanizados y dorados a la perfección, servidos con salsa ranch.</p>
+                        <button class="btn-1" onclick="window.location.href='ordenar.html'">Ordenar Ahora</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-price">110.00 Lps</span>
+                        <img src="../food9.png" alt="Nachos Especiales">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pizza Especial</h3>
+                        <p>Crujientes nachos cubiertos con queso fundido, guacamole fresco, pico de gallo y crema.</p>
+                        <button class="btn-1" onclick="window.location.href='ordenar.html'">Ordenar Ahora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer container">
+        <img class="logo-2" src="../logo.svg" alt="">
+        <div class="links">
+            <h4>Menú</h4>
+            <ul>
+                <li><a href="hamburguesas.html">Hamburguesas</a></li>
+                <li><a href="burritos.html">Burritos</a></li>
+                <li><a href="complementos.html">Complementos</a></li>
+                <li><a href="bebidas.html">Bebidas</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Servicios</h4>
+            <ul>
+                <li><a href="forms.html">Delivery</a></li>
+                <li><a href="forms.html">Para Llevar</a></li>
+                <li><a href="forms.html">Reservaciones</a></li>
+                <li><a href="forms.html">Eventos</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Nosotros</h4>
+            <ul>
+                <li><a href="nosotros.html">Historia</a></li>
+                <li><a href="nosotros.html">Equipo</a></li>
+                <li><a href="nosotros.html">Trabaja con Nosotros</a></li>
+                <li><a href="nosotros.html">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html> 

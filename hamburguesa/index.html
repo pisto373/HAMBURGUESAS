@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background: url('/fondofachada.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <header class="header" id="inicio">
+        <div class="menu container">
+            <img class="logo-1" src="/logo.svg" alt="">
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="#inicio" class="active">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#horario">Horario</a></li>
+                    </ul>
+                </div>
+                <img class="logo-2" src="/logo.svg" alt="">
+                <div class="menu-2">
+                    <div class="sociales">
+                        <a href="#" target="_blank">
+                            <div class="social">
+                                <img src="/s1.svg" alt="Facebook">
+                            </div>
+                        </a>
+                        <a href="#" target="_blank">
+                            <div class="social">
+                                <img src="/s2.svg" alt="Instagram">
+                            </div>
+                        </a>
+                        <a href="#" target="_blank">
+                            <div class="social">
+                                <img src="/s3.svg" alt="WhatsApp">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    <div class="header-content container">
+        <div class="swiper mySwiper-1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slider">
+                        <div class="slider-txt">
+                            <h1>Hamburguesa Clásica</h1>
+                            <p>Deliciosa hamburguesa con carne 100% de res, queso cheddar, lechuga fresca, tomate y nuestra salsa especial de la casa.
+                            </p>
+                            <div class="botones">
+                                <a href="pages/ordenar.html" class="btn-1">Ordenar</a>
+                                <a href="pages/menu.html" class="btn-2">Ver Menú</a>
+                            </div>
+                        </div>
+                        <div class="slider-img">
+                            <span class="price-tag1">120.00 Lps</span>
+                            <img src="/slider1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider">
+                        <div class="slider-txt">
+                            <h1>Mega Burger</h1>
+                            <p>Doble carne, doble queso, tocino crujiente, aros de cebolla y nuestra salsa BBQ casera. ¡Una explosión de sabor!
+                            </p>
+                            <div class="botones">
+                                <a href="pages/ordenar.html" class="btn-1">Ordenar</a>
+                                <a href="pages/menu.html" class="btn-2">Ver Menú</a>
+                            </div>
+                        </div>
+                        <div class="slider-img">
+                            <span class="price-tag2">180.00 Lps</span>
+                            <img src="/slider2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider">
+                        <div class="slider-txt">
+                            <h1>Chicken Burger</h1>
+                            <p>Pechuga de pollo empanizada, queso suizo, lechuga romana, tomate y nuestra mayonesa especial. ¡Irresistiblemente crujiente!
+                            </p>
+                            <div class="botones">
+                                <a href="pages/ordenar.html" class="btn-1">Ordenar</a>
+                                <a href="pages/menu.html" class="btn-2">Ver Menú</a>
+                            </div>
+                        </div>
+                        <div class="slider-img">
+                            <span class="price-tag3">150.00 Lps</span>
+                            <img src="/slider3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    </header>
+    <main class="products" id="productos">
+        <div class="tabs container">
+            <input type="radio" name="tabs" id="tab1" checked="checked" class="tabInput" value="1">
+            <label for="tab1">Hamburguesa</label>
+            <div class="tab">
+                <div class="swiper mySwiper-2" id="swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="/food1.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>BBQ Burger</h4>
+                                    <p>Con Tocino y Queso</p>
+                                    <span class="price">160.00 Lps</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Especial</h4>
+                                    <img src="/food2.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Cheese Lover</h4>
+                                    <p>Triple Queso</p>
+                                    <span class="price">140.00 Lps</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Premium</h4>
+                                    <img src="/food3.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Mushroom Deluxe</h4>
+                                    <p>Con Hongos Frescos</p>
+                                    <span class="price">170.00 Lps</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <input type="radio" name="tabs" id="tab2" class="tabInput" value="2">
+            <label for="tab2">Burritos</label>
+            <div class="tab">
+                <div class="swiper mySwiper-2" id="swiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Favorito</h4>
+                                    <img src="/food4.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Burrito Supreme</h4>
+                                    <p>Extra Grande</p>
+                                    <span class="price">130.00 Lps</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Picante</h4>
+                                    <img src="/food5.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Burrito Jalapeño</h4>
+                                    <p>Extra Picante</p>
+                                    <span class="price">145.00 Lps</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="/food6.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Burrito Veggie</h4>
+                                    <p>100% Vegetariano</p>
+                                    <span class="price">125.00 Lps</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <input type="radio" name="tabs" id="tab3" class="tabInput" value="3">
+            <label for="tab3">Variedad</label>
+            <div class="tab">
+                <div class="swiper mySwiper-2" id="swiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Favorito</h4>
+                                    <img src="/food7.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Papas Supreme</h4>
+                                    <p>Con queso, tocino y jalapeños</p>
+                                    <span class="price">95.00 Lps</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Especial</h4>
+                                    <img src="/food8.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Aros de Cebolla</h4>
+                                    <p>Crujientes con salsa ranch</p>
+                                    <span class="price">85.00 Lps</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Nuevo</h4>
+                                    <img src="/food9.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                    <h4>Pizza con Horilla de Q ueso</h4>
+                                    <p>6 piezas con salsa a elegir</p>
+                                    <span class="price">230.00 Lps</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="info container" id="servicios">
+        <div class="info-img">
+            <img src="/info.png" alt="">
+        </div>
+        <div class="info-txt">
+            <h2>Sobre Nosotros</h2>
+            <p>
+                En Burger House nos especializamos en crear las mejores hamburguesas artesanales. 
+                Utilizamos ingredientes frescos y de la más alta calidad, carnes seleccionadas y 
+                panes recién horneados. Nuestro compromiso es brindar la mejor experiencia 
+                gastronómica a nuestros clientes.
+            </p>
+            <a href="pages/mas-informacion.html" class="btn-2">Más Información</a>
+        </div>
+    </section>
+    <section class="horario" id="horario">
+        <div class="horario-info container">
+            <h2>Horario</h2>
+            <div class="txt">
+                <h4>Dirección</h4>
+                <p>
+                    Boulevard Suyapa, Plaza Milano
+                </p>
+                <p>
+                    Tegucigalpa, Honduras
+                </p>
+            </div>
+            <div class="txt">
+                <h4>Horario</h4>
+                <p>
+                    Lunes a Viernes: 11 AM - 10 PM
+                </p>
+                <p>
+                    Sábado y Domingo: 12 PM - 11 PM
+                </p>
+            </div>
+            <div class="txt">
+                <h4>Teléfono</h4>
+                <p>
+                    +504 9929-7454
+                </p>
+                <p>
+                    +504 9962-0194
+                </p>
+            </div>
+            <div class="txt">
+                <h4>Redes Sociales</h4>
+                <div class="sociales">
+                    <a href="#">
+                        <img src="/s1.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="/s2.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <img src="/s3.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4343.714950307552!2d-88.02892685580312!3d14.970812808048862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f65d7005f21041f%3A0xa19777548c8c8dc0!2sPe%C3%B1a%20blanca%20cortes!5e1!3m2!1ses-419!2shn!4v1745973066949!5m2!1ses-419!2shn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <footer class="footer container">
+        <img class="logo-2" src="/logo.svg" alt="">
+        <div class="links">
+            <h4>Menú</h4>
+            <ul>
+                <li><a href="pages/hamburguesas.html">Hamburguesas</a></li>
+                <li><a href="pages/burritos.html">Burritos</a></li>
+                <li><a href="pages/complementos.html">Complementos</a></li>
+                <li><a href="pages/bebidas.html">Bebidas</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Servicios</h4>
+            <ul>
+                <li><a href="pages/forms.html">Delivery</a></li>
+                <li><a href="pages/forms.html">Para Llevar</a></li>
+                <li><a href="pages/forms.html">Reservaciones</a></li>
+                <li><a href="pages/forms.html">Eventos</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Nosotros</h4>
+            <ul>
+                <li><a href="pages/nosotros.html">Historia</a></li>
+                <li><a href="pages/nosotros.html">Equipo</a></li>
+                <li><a href="pages/nosotros.html">Trabaja con Nosotros</a></li>
+                <li><a href="pages/nosotros.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="links social-links">
+            <h4>Redes Sociales</h4>
+            <div class="sociales">
+                <a href="#">
+                    <img src="/s1.svg" alt="">
+                    Facebook
+                </a>
+                <a href="#">
+                    <img src="/s2.svg" alt="">
+                    Twitter
+                </a>
+                <a href="#">
+                    <img src="/s3.svg" alt="">
+                    Instagram
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas - Burger House</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="pages.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
+                        url('../fondobebidas.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .products-page {
+            background: none;
+        }
+        .products-page::before {
+            background: none;
+        }
+        .product-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="../index.html">
+                <img class="logo-1" src="../logo.svg" alt="Logo">
+            </a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="../menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="hamburguesas.html">Hamburguesas</a></li>
+                        <li><a href="burritos.html">Burritos</a></li>
+                        <li><a href="complementos.html">Complementos</a></li>
+                        <li><a href="bebidas.html" class="active">Bebidas</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="products-page">
+        <div class="container">
+            <h1>Nuestras Bebidas</h1>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-price">35.00 Lps</span>
+                        <img src="../RefrescoNatural.avif" alt="Refresco Natural">
+                    </div>
+                    <div class="product-info">
+                        <h3>Refresco Natural</h3>
+                        <p>Refrescos naturales de frutas de temporada, servidos bien fríos.</p>
+                        <button class="btn-1" onclick="window.location.href='ordenar.html'">Ordenar Ahora</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-price">25.00 Lps</span>
+                        <img src="../gaeosa1.jpg" alt="Gaseosa">
+                    </div>
+                    <div class="product-info">
+                        <h3>Gaseosa</h3>
+                        <p>Variedad de gaseosas en lata o botella, siempre frías.</p>
+                        <button class="btn-1" onclick="window.location.href='ordenar.html'">Ordenar Ahora</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <span class="product-price">40.00 Lps</span>
+                        <img src="../limonadafrozen.jpg" alt="Limonada Frozen">
+                    </div>
+                    <div class="product-info">
+                        <h3>Limonada Frozen</h3>
+                        <p>Limonada frappé, perfecta para los días calurosos.</p>
+                        <button class="btn-1" onclick="window.location.href='ordenar.html'">Ordenar Ahora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer container">
+        <img class="logo-2" src="../logo.svg" alt="">
+        <div class="links">
+            <h4>Menú</h4>
+            <ul>
+                <li><a href="hamburguesas.html">Hamburguesas</a></li>
+                <li><a href="burritos.html">Burritos</a></li>
+                <li><a href="complementos.html">Complementos</a></li>
+                <li><a href="bebidas.html">Bebidas</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Servicios</h4>
+            <ul>
+                <li><a href="forms.html">Delivery</a></li>
+                <li><a href="forms.html">Para Llevar</a></li>
+                <li><a href="forms.html">Reservaciones</a></li>
+                <li><a href="forms.html">Eventos</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Nosotros</h4>
+            <ul>
+                <li><a href="nosotros.html">Historia</a></li>
+                <li><a href="nosotros.html">Equipo</a></li>
+                <li><a href="nosotros.html">Trabaja con Nosotros</a></li>
+                <li><a href="nosotros.html">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html> 

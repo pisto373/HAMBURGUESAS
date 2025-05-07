@@ -1,0 +1,396 @@
+[01-May-2025 06:52:28 Europe/Berlin] 2025-05-01 06:52:28 - Iniciando proceso de orden
+
+[01-May-2025 06:52:28 Europe/Berlin] 2025-05-01 06:52:28 - Base de datos conectada
+
+[01-May-2025 06:52:28 Europe/Berlin] 2025-05-01 06:52:28 - Datos recibidos (raw):
+{"productos":[{"id":4,"cantidad":1,"precio":130}],"total":130}
+
+[01-May-2025 06:52:28 Europe/Berlin] 2025-05-01 06:52:28 - Datos decodificados:
+Array
+(
+    [productos] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 4
+                    [cantidad] => 1
+                    [precio] => 130
+                )
+
+        )
+
+    [total] => 130
+)
+
+
+[01-May-2025 06:52:28 Europe/Berlin] 2025-05-01 06:52:28 - Transacción iniciada
+
+[01-May-2025 06:52:28 Europe/Berlin] 2025-05-01 06:52:28 - Orden principal creada con ID: 1
+
+[01-May-2025 06:52:28 Europe/Berlin] 2025-05-01 06:52:28 - Procesando producto 1:
+Array
+(
+    [id] => 4
+    [cantidad] => 1
+    [precio] => 130
+)
+
+
+[01-May-2025 06:52:28 Europe/Berlin] 2025-05-01 06:52:28 - Detalle de orden guardado para producto ID: 4
+
+[01-May-2025 06:52:28 Europe/Berlin] 2025-05-01 06:52:28 - Transacción completada exitosamente
+
+[01-May-2025 07:06:03 Europe/Berlin] 2025-05-01 07:06:03 - Iniciando proceso de orden
+
+[01-May-2025 07:06:03 Europe/Berlin] 2025-05-01 07:06:03 - Base de datos conectada
+
+[01-May-2025 07:06:03 Europe/Berlin] 2025-05-01 07:06:03 - Datos recibidos (raw):
+{"productos":[{"id":1,"cantidad":1,"precio":120},{"id":11,"cantidad":1,"precio":25},{"id":16,"cantidad":1,"precio":70}],"total":215}
+
+[01-May-2025 07:06:03 Europe/Berlin] 2025-05-01 07:06:03 - Datos decodificados:
+Array
+(
+    [productos] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 1
+                    [cantidad] => 1
+                    [precio] => 120
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [cantidad] => 1
+                    [precio] => 25
+                )
+
+            [2] => Array
+                (
+                    [id] => 16
+                    [cantidad] => 1
+                    [precio] => 70
+                )
+
+        )
+
+    [total] => 215
+)
+
+
+[01-May-2025 07:06:03 Europe/Berlin] 2025-05-01 07:06:03 - Transacción iniciada
+
+[01-May-2025 07:06:03 Europe/Berlin] 2025-05-01 07:06:03 - Orden principal creada con ID: 2
+
+[01-May-2025 07:06:03 Europe/Berlin] 2025-05-01 07:06:03 - Procesando producto 1:
+Array
+(
+    [id] => 1
+    [cantidad] => 1
+    [precio] => 120
+)
+
+
+[01-May-2025 07:06:03 Europe/Berlin] 2025-05-01 07:06:03 - Detalle de orden guardado para producto ID: 1
+
+[01-May-2025 07:06:03 Europe/Berlin] 2025-05-01 07:06:03 - Procesando producto 2:
+Array
+(
+    [id] => 11
+    [cantidad] => 1
+    [precio] => 25
+)
+
+
+[01-May-2025 07:06:03 Europe/Berlin] 2025-05-01 07:06:03 - Detalle de orden guardado para producto ID: 11
+
+[01-May-2025 07:06:03 Europe/Berlin] 2025-05-01 07:06:03 - Procesando producto 3:
+Array
+(
+    [id] => 16
+    [cantidad] => 1
+    [precio] => 70
+)
+
+
+[01-May-2025 07:06:03 Europe/Berlin] 2025-05-01 07:06:03 - Detalle de orden guardado para producto ID: 16
+
+[01-May-2025 07:06:03 Europe/Berlin] 2025-05-01 07:06:03 - Transacción completada exitosamente
+
+[01-May-2025 07:09:16 Europe/Berlin] 2025-05-01 07:09:16 - Iniciando proceso de orden
+
+[01-May-2025 07:09:16 Europe/Berlin] 2025-05-01 07:09:16 - Base de datos conectada
+
+[01-May-2025 07:09:16 Europe/Berlin] 2025-05-01 07:09:16 - Datos recibidos (raw):
+{"productos":[{"id":6,"cantidad":1,"precio":125},{"id":11,"cantidad":1,"precio":25},{"id":15,"cantidad":1,"precio":85}],"total":235}
+
+[01-May-2025 07:09:16 Europe/Berlin] 2025-05-01 07:09:16 - Datos decodificados:
+Array
+(
+    [productos] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 6
+                    [cantidad] => 1
+                    [precio] => 125
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [cantidad] => 1
+                    [precio] => 25
+                )
+
+            [2] => Array
+                (
+                    [id] => 15
+                    [cantidad] => 1
+                    [precio] => 85
+                )
+
+        )
+
+    [total] => 235
+)
+
+
+[01-May-2025 07:09:16 Europe/Berlin] 2025-05-01 07:09:16 - Transacción iniciada
+
+[01-May-2025 07:09:16 Europe/Berlin] 2025-05-01 07:09:16 - Orden principal creada con ID: 3
+
+[01-May-2025 07:09:16 Europe/Berlin] 2025-05-01 07:09:16 - Procesando producto 1:
+Array
+(
+    [id] => 6
+    [cantidad] => 1
+    [precio] => 125
+)
+
+
+[01-May-2025 07:09:16 Europe/Berlin] 2025-05-01 07:09:16 - Detalle de orden guardado para producto ID: 6
+
+[01-May-2025 07:09:16 Europe/Berlin] 2025-05-01 07:09:16 - Procesando producto 2:
+Array
+(
+    [id] => 11
+    [cantidad] => 1
+    [precio] => 25
+)
+
+
+[01-May-2025 07:09:16 Europe/Berlin] 2025-05-01 07:09:16 - Detalle de orden guardado para producto ID: 11
+
+[01-May-2025 07:09:16 Europe/Berlin] 2025-05-01 07:09:16 - Procesando producto 3:
+Array
+(
+    [id] => 15
+    [cantidad] => 1
+    [precio] => 85
+)
+
+
+[01-May-2025 07:09:16 Europe/Berlin] 2025-05-01 07:09:16 - Detalle de orden guardado para producto ID: 15
+
+[01-May-2025 07:09:16 Europe/Berlin] 2025-05-01 07:09:16 - Transacción completada exitosamente
+
+[06-May-2025 14:47:42 Europe/Berlin] 2025-05-06 14:47:42 - Iniciando proceso de orden
+
+[06-May-2025 14:47:42 Europe/Berlin] 2025-05-06 14:47:42 - Base de datos conectada
+
+[06-May-2025 14:47:42 Europe/Berlin] 2025-05-06 14:47:42 - Datos recibidos (raw):
+{"productos":[{"id":4,"cantidad":1,"precio":130}],"total":130}
+
+[06-May-2025 14:47:42 Europe/Berlin] 2025-05-06 14:47:42 - Datos decodificados:
+Array
+(
+    [productos] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 4
+                    [cantidad] => 1
+                    [precio] => 130
+                )
+
+        )
+
+    [total] => 130
+)
+
+
+[06-May-2025 14:47:42 Europe/Berlin] 2025-05-06 14:47:42 - Transacción iniciada
+
+[06-May-2025 14:47:42 Europe/Berlin] 2025-05-06 14:47:42 - Orden principal creada con ID: 4
+
+[06-May-2025 14:47:42 Europe/Berlin] 2025-05-06 14:47:42 - Procesando producto 1:
+Array
+(
+    [id] => 4
+    [cantidad] => 1
+    [precio] => 130
+)
+
+
+[06-May-2025 14:47:42 Europe/Berlin] 2025-05-06 14:47:42 - Detalle de orden guardado para producto ID: 4
+
+[06-May-2025 14:47:42 Europe/Berlin] 2025-05-06 14:47:42 - Transacción completada exitosamente
+
+[06-May-2025 15:39:16 Europe/Berlin] 2025-05-06 15:39:16 - Iniciando proceso de orden
+
+[06-May-2025 15:39:16 Europe/Berlin] 2025-05-06 15:39:16 - Base de datos conectada
+
+[06-May-2025 15:39:16 Europe/Berlin] 2025-05-06 15:39:16 - Datos recibidos (raw):
+{"productos":[{"id":6,"cantidad":1,"precio":125},{"id":14,"cantidad":1,"precio":75},{"id":10,"cantidad":1,"precio":25}],"total":225}
+
+[06-May-2025 15:39:16 Europe/Berlin] 2025-05-06 15:39:16 - Datos decodificados:
+Array
+(
+    [productos] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 6
+                    [cantidad] => 1
+                    [precio] => 125
+                )
+
+            [1] => Array
+                (
+                    [id] => 14
+                    [cantidad] => 1
+                    [precio] => 75
+                )
+
+            [2] => Array
+                (
+                    [id] => 10
+                    [cantidad] => 1
+                    [precio] => 25
+                )
+
+        )
+
+    [total] => 225
+)
+
+
+[06-May-2025 15:39:16 Europe/Berlin] 2025-05-06 15:39:16 - Transacción iniciada
+
+[06-May-2025 15:39:16 Europe/Berlin] 2025-05-06 15:39:16 - Orden principal creada con ID: 5
+
+[06-May-2025 15:39:16 Europe/Berlin] 2025-05-06 15:39:16 - Procesando producto 1:
+Array
+(
+    [id] => 6
+    [cantidad] => 1
+    [precio] => 125
+)
+
+
+[06-May-2025 15:39:16 Europe/Berlin] 2025-05-06 15:39:16 - Detalle de orden guardado para producto ID: 6
+
+[06-May-2025 15:39:16 Europe/Berlin] 2025-05-06 15:39:16 - Procesando producto 2:
+Array
+(
+    [id] => 14
+    [cantidad] => 1
+    [precio] => 75
+)
+
+
+[06-May-2025 15:39:16 Europe/Berlin] 2025-05-06 15:39:16 - Detalle de orden guardado para producto ID: 14
+
+[06-May-2025 15:39:16 Europe/Berlin] 2025-05-06 15:39:16 - Procesando producto 3:
+Array
+(
+    [id] => 10
+    [cantidad] => 1
+    [precio] => 25
+)
+
+
+[06-May-2025 15:39:16 Europe/Berlin] 2025-05-06 15:39:16 - Detalle de orden guardado para producto ID: 10
+
+[06-May-2025 15:39:16 Europe/Berlin] 2025-05-06 15:39:16 - Transacción completada exitosamente
+
+[06-May-2025 15:50:35 Europe/Berlin] 2025-05-06 15:50:35 - Iniciando proceso de orden
+
+[06-May-2025 15:50:35 Europe/Berlin] 2025-05-06 15:50:35 - Base de datos conectada
+
+[06-May-2025 15:50:35 Europe/Berlin] 2025-05-06 15:50:35 - Datos recibidos (raw):
+{"productos":[{"id":4,"cantidad":1,"precio":130},{"id":11,"cantidad":1,"precio":25},{"id":15,"cantidad":1,"precio":85}],"total":240}
+
+[06-May-2025 15:50:35 Europe/Berlin] 2025-05-06 15:50:35 - Datos decodificados:
+Array
+(
+    [productos] => Array
+        (
+            [0] => Array
+                (
+                    [id] => 4
+                    [cantidad] => 1
+                    [precio] => 130
+                )
+
+            [1] => Array
+                (
+                    [id] => 11
+                    [cantidad] => 1
+                    [precio] => 25
+                )
+
+            [2] => Array
+                (
+                    [id] => 15
+                    [cantidad] => 1
+                    [precio] => 85
+                )
+
+        )
+
+    [total] => 240
+)
+
+
+[06-May-2025 15:50:35 Europe/Berlin] 2025-05-06 15:50:35 - Transacción iniciada
+
+[06-May-2025 15:50:35 Europe/Berlin] 2025-05-06 15:50:35 - Orden principal creada con ID: 6
+
+[06-May-2025 15:50:35 Europe/Berlin] 2025-05-06 15:50:35 - Procesando producto 1:
+Array
+(
+    [id] => 4
+    [cantidad] => 1
+    [precio] => 130
+)
+
+
+[06-May-2025 15:50:35 Europe/Berlin] 2025-05-06 15:50:35 - Detalle de orden guardado para producto ID: 4
+
+[06-May-2025 15:50:35 Europe/Berlin] 2025-05-06 15:50:35 - Procesando producto 2:
+Array
+(
+    [id] => 11
+    [cantidad] => 1
+    [precio] => 25
+)
+
+
+[06-May-2025 15:50:35 Europe/Berlin] 2025-05-06 15:50:35 - Detalle de orden guardado para producto ID: 11
+
+[06-May-2025 15:50:35 Europe/Berlin] 2025-05-06 15:50:35 - Procesando producto 3:
+Array
+(
+    [id] => 15
+    [cantidad] => 1
+    [precio] => 85
+)
+
+
+[06-May-2025 15:50:35 Europe/Berlin] 2025-05-06 15:50:35 - Detalle de orden guardado para producto ID: 15
+
+[06-May-2025 15:50:35 Europe/Berlin] 2025-05-06 15:50:35 - Transacción completada exitosamente
+

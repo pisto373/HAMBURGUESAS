@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenar - Burger House</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="pages.css">
+    <link rel="stylesheet" href="ordenar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%),
+                        url('../fondo1.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="../index.html">
+                <img class="logo-1" src="../logo.svg" alt="Logo">
+            </a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="../menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <div class="menu-1">
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="menu.html">Menú</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="ordenar-container">
+        <div class="ordenar-header">
+            <h1>Realiza tu Orden</h1>
+            <p>Selecciona tus productos favoritos y personaliza tu pedido</p>
+        </div>
+
+        <div class="ordenar-grid">
+            <div class="categoria">
+                <h2>Hamburguesas</h2>
+                <div class="producto">
+                    <div class="producto-img">
+                        <img src="../slider1.png" alt="Hamburguesa Clásica">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Hamburguesa Clásica</h3>
+                        <p>Carne 100% de res, queso cheddar, lechuga, tomate y salsa especial</p>
+                        <span class="producto-precio">120.00 Lps</span>
+                        <div class="cantidad-control">
+                            <button class="cantidad-btn" onclick="decrementar(this)">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="cantidad-btn" onclick="incrementar(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <div class="producto-img">
+                        <img src="../slider2.png" alt="Mega Burger">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Mega Burger</h3>
+                        <p>Doble carne, doble queso, tocino, aros de cebolla y salsa BBQ</p>
+                        <span class="producto-precio">180.00 Lps</span>
+                        <div class="cantidad-control">
+                            <button class="cantidad-btn" onclick="decrementar(this)">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="cantidad-btn" onclick="incrementar(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <div class="producto-img">
+                        <img src="../slider3.png" alt="Chicken Burger">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Chicken Burger</h3>
+                        <p>Pechuga de pollo empanizada, queso suizo, lechuga romana y mayonesa especial</p>
+                        <span class="producto-precio">150.00 Lps</span>
+                        <div class="cantidad-control">
+                            <button class="cantidad-btn" onclick="decrementar(this)">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="cantidad-btn" onclick="incrementar(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categoria">
+                <h2>Burritos</h2>
+                <div class="producto">
+                    <div class="producto-img">
+                        <img src="../food4.png" alt="Burrito Supreme">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Burrito Supreme</h3>
+                        <p>Extra grande con carne, frijoles, queso, pico de gallo y guacamole</p>
+                        <span class="producto-precio">130.00 Lps</span>
+                        <div class="cantidad-control">
+                            <button class="cantidad-btn" onclick="decrementar(this)">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="cantidad-btn" onclick="incrementar(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <div class="producto-img">
+                        <img src="../food5.png" alt="Burrito Jalapeño">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Burrito Jalapeño</h3>
+                        <p>Picante con jalapeños, carne, queso y salsa especial</p>
+                        <span class="producto-precio">145.00 Lps</span>
+                        <div class="cantidad-control">
+                            <button class="cantidad-btn" onclick="decrementar(this)">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="cantidad-btn" onclick="incrementar(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <div class="producto-img">
+                        <img src="../food6.png" alt="Burrito Veggie">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Burrito Veggie</h3>
+                        <p>100% vegetariano con frijoles, arroz, vegetales asados y guacamole</p>
+                        <span class="producto-precio">125.00 Lps</span>
+                        <div class="cantidad-control">
+                            <button class="cantidad-btn" onclick="decrementar(this)">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="cantidad-btn" onclick="incrementar(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categoria">
+                <h2>Complementos</h2>
+                <div class="producto">
+                    <div class="producto-img">
+                        <img src="../food7.png" alt="Papas Supreme">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Papas Supreme</h3>
+                        <p>Con queso, tocino y jalapeños</p>
+                        <span class="producto-precio">95.00 Lps</span>
+                        <div class="cantidad-control">
+                            <button class="cantidad-btn" onclick="decrementar(this)">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="cantidad-btn" onclick="incrementar(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <div class="producto-img">
+                        <img src="../food8.png" alt="Aros de Cebolla">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Aros de Cebolla</h3>
+                        <p>Crujientes con salsa ranch</p>
+                        <span class="producto-precio">85.00 Lps</span>
+                        <div class="cantidad-control">
+                            <button class="cantidad-btn" onclick="decrementar(this)">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="cantidad-btn" onclick="incrementar(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <div class="producto-img">
+                        <img src="../food9.png" alt="Nachos Especiales">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Nachos Especiales</h3>
+                        <p>Con queso fundido, guacamole, pico de gallo y crema</p>
+                        <span class="producto-precio">110.00 Lps</span>
+                        <div class="cantidad-control">
+                            <button class="cantidad-btn" onclick="decrementar(this)">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="cantidad-btn" onclick="incrementar(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categoria">
+                <h2>Bebidas</h2>
+                <div class="producto">
+                    <div class="producto-img">
+                        <img src="../cocacola.png" alt="Coca-Cola">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Coca-Cola</h3>
+                        <p>Bebida refrescante 500ml</p>
+                        <span class="producto-precio">25.00 Lps</span>
+                        <div class="cantidad-control">
+                            <button class="cantidad-btn" onclick="decrementar(this)">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="cantidad-btn" onclick="incrementar(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <div class="producto-img">
+                        <img src="../sprite.jpg" alt="Sprite">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Sprite</h3>
+                        <p>Bebida refrescante lima-limón 500ml</p>
+                        <span class="producto-precio">25.00 Lps</span>
+                        <div class="cantidad-control">
+                            <button class="cantidad-btn" onclick="decrementar(this)">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="cantidad-btn" onclick="incrementar(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <div class="producto-img">
+                        <img src="../fanta.jpg" alt="Fanta">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Fanta</h3>
+                        <p>Bebida refrescante de naranja 500ml</p>
+                        <span class="producto-precio">25.00 Lps</span>
+                        <div class="cantidad-control">
+                            <button class="cantidad-btn" onclick="decrementar(this)">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="cantidad-btn" onclick="incrementar(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <div class="producto-img">
+                        <img src="../tefrio.jpg" alt="Té Frío">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Té Frío</h3>
+                        <p>Té helado de limón o durazno 500ml</p>
+                        <span class="producto-precio">30.00 Lps</span>
+                        <div class="cantidad-control">
+                            <button class="cantidad-btn" onclick="decrementar(this)">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="cantidad-btn" onclick="incrementar(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categoria">
+                <h2>Postres</h2>
+                <div class="producto">
+                    <div class="producto-img">
+                        <img src="../SundaedeChocolate.jpg" alt="Sundae de Chocolate">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Sundae de Chocolate</h3>
+                        <p>Helado de vainilla con salsa de chocolate y crema batida</p>
+                        <span class="producto-precio">75.00 Lps</span>
+                        <div class="cantidad-control">
+                            <button class="cantidad-btn" onclick="decrementar(this)">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="cantidad-btn" onclick="incrementar(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <div class="producto-img">
+                        <img src="../chiskeei.jpg" alt="Cheesecake">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Cheesecake</h3>
+                        <p>Con salsa de frutos rojos y galleta</p>
+                        <span class="producto-precio">85.00 Lps</span>
+                        <div class="cantidad-control">
+                            <button class="cantidad-btn" onclick="decrementar(this)">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="cantidad-btn" onclick="incrementar(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <div class="producto-img">
+                        <img src="../brownie.jpg" alt="Brownie">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Brownie</h3>
+                        <p>Con helado de vainilla y salsa de caramelo</p>
+                        <span class="producto-precio">70.00 Lps</span>
+                        <div class="cantidad-control">
+                            <button class="cantidad-btn" onclick="decrementar(this)">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="cantidad-btn" onclick="incrementar(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categoria">
+                <h2>Combos</h2>
+                <div class="producto">
+                    <div class="producto-img">
+                        <img src="../comboclasico.jpg" alt="Combo Clásico">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Combo Clásico</h3>
+                        <p>Hamburguesa Clásica + Papas + Bebida</p>
+                        <span class="producto-precio">180.00 Lps</span>
+                        <div class="cantidad-control">
+                            <button class="cantidad-btn" onclick="decrementar(this)">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="cantidad-btn" onclick="incrementar(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <div class="producto-img">
+                        <img src="../combofamiliar.jpg" alt="Combo Familiar">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Combo Familiar</h3>
+                        <p>2 Hamburguesas + 2 Burritos + 2 Papas + 4 Bebidas</p>
+                        <span class="producto-precio">450.00 Lps</span>
+                        <div class="cantidad-control">
+                            <button class="cantidad-btn" onclick="decrementar(this)">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="cantidad-btn" onclick="incrementar(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="producto">
+                    <div class="producto-img">
+                        <img src="../combomega.jpg" alt="Combo Mega">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Combo Mega</h3>
+                        <p>Mega Burger + Papas Supreme + Aros de Cebolla + Bebida + Postre</p>
+                        <span class="producto-precio">320.00 Lps</span>
+                        <div class="cantidad-control">
+                            <button class="cantidad-btn" onclick="decrementar(this)">-</button>
+                            <span class="cantidad">0</span>
+                            <button class="cantidad-btn" onclick="incrementar(this)">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carrito" onclick="verCarrito()">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="carrito-total">0.00 Lps</span>
+            <span class="carrito-cantidad">0</span>
+        </div>
+    </main>
+
+    <div id="carrito-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Tu Carrito</h2>
+            <div id="carrito-items"></div>
+            <div class="carrito-total">
+                <h3>Total: <span id="total-carrito">0.00</span> Lps</h3>
+            </div>
+            <button id="btn-ordenar" class="btn-1">Realizar Orden</button>
+        </div>
+    </div>
+
+    <footer class="footer container">
+        <img class="logo-2" src="../logo.svg" alt="">
+        <div class="links">
+            <h4>Menú</h4>
+            <ul>
+                <li><a href="hamburguesas.html">Hamburguesas</a></li>
+                <li><a href="burritos.html">Burritos</a></li>
+                <li><a href="complementos.html">Complementos</a></li>
+                <li><a href="bebidas.html">Bebidas</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Servicios</h4>
+            <ul>
+                <li><a href="forms.html">Delivery</a></li>
+                <li><a href="forms.html">Para Llevar</a></li>
+                <li><a href="forms.html">Reservaciones</a></li>
+                <li><a href="forms.html">Eventos</a></li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>Nosotros</h4>
+            <ul>
+                <li><a href="nosotros.html">Historia</a></li>
+                <li><a href="nosotros.html">Equipo</a></li>
+                <li><a href="nosotros.html">Trabaja con Nosotros</a></li>
+                <li><a href="nosotros.html">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+        let carrito = [];
+        const modal = document.getElementById('carrito-modal');
+        const span = document.getElementsByClassName('close')[0];
+        const carritoItems = document.getElementById('carrito-items');
+        const totalCarrito = document.getElementById('total-carrito');
+        const btnOrdenar = document.getElementById('btn-ordenar');
+
+        function incrementar(btn) {
+            const cantidadSpan = btn.parentElement.querySelector('.cantidad');
+            const cantidad = parseInt(cantidadSpan.textContent);
+            cantidadSpan.textContent = cantidad + 1;
+            actualizarCarrito(btn.parentElement.parentElement);
+        }
+
+        function decrementar(btn) {
+            const cantidadSpan = btn.parentElement.querySelector('.cantidad');
+            const cantidad = parseInt(cantidadSpan.textContent);
+            if (cantidad > 0) {
+                cantidadSpan.textContent = cantidad - 1;
+                actualizarCarrito(btn.parentElement.parentElement);
+            }
+        }
+
+        function actualizarCarrito(productoElement) {
+            const nombre = productoElement.querySelector('h3').textContent;
+            const precioText = productoElement.querySelector('.producto-precio').textContent;
+            const precio = parseFloat(precioText.replace(' Lps', ''));
+            const cantidad = parseInt(productoElement.querySelector('.cantidad').textContent);
+            
+            // Obtener el ID del producto basado en el nombre
+            const productoInfo = obtenerProductoInfo(nombre);
+            
+            const index = carrito.findIndex(item => item.nombre === nombre);
+            
+            if (cantidad > 0) {
+                if (index === -1) {
+                    carrito.push({ 
+                        id: productoInfo.id,
+                        nombre, 
+                        precio, 
+                        cantidad 
+                    });
+                } else {
+                    carrito[index].cantidad = cantidad;
+                }
+            } else {
+                if (index !== -1) {
+                    carrito.splice(index, 1);
+                }
+            }
+            
+            actualizarCarritoUI();
+        }
+
+        function obtenerProductoInfo(nombre) {
+            const productosDB = {
+                'Hamburguesa Clásica': { id: 1 },
+                'Mega Burger': { id: 2 },
+                'Chicken Burger': { id: 3 },
+                'Burrito Supreme': { id: 4 },
+                'Burrito Jalapeño': { id: 5 },
+                'Burrito Veggie': { id: 6 },
+                'Papas Supreme': { id: 7 },
+                'Aros de Cebolla': { id: 8 },
+                'Nachos Especiales': { id: 9 },
+                'Coca-Cola': { id: 10 },
+                'Sprite': { id: 11 },
+                'Fanta': { id: 12 },
+                'Té Frío': { id: 13 },
+                'Sundae de Chocolate': { id: 14 },
+                'Cheesecake': { id: 15 },
+                'Brownie': { id: 16 },
+                'Combo Clásico': { id: 17 },
+                'Combo Familiar': { id: 18 },
+                'Combo Mega': { id: 19 }
+            };
+            return productosDB[nombre] || { id: 0 };
+        }
+
+        function actualizarCarritoUI() {
+            carritoItems.innerHTML = '';
+            let total = 0;
+            
+            carrito.forEach(item => {
+                const itemTotal = item.precio * item.cantidad;
+                total += itemTotal;
+                
+                const itemElement = document.createElement('div');
+                itemElement.className = 'carrito-item';
+                itemElement.innerHTML = `
+                    <span>${item.nombre} x ${item.cantidad}</span>
+                    <span>${itemTotal.toFixed(2)} Lps</span>
+                `;
+                carritoItems.appendChild(itemElement);
+            });
+            
+            totalCarrito.textContent = total.toFixed(2);
+            
+            // Actualizar el contador y total del carrito flotante
+            const carritoCantidad = document.querySelector('.carrito-cantidad');
+            const carritoTotalSpan = document.querySelector('.carrito-total');
+            const totalItems = carrito.reduce((sum, item) => sum + item.cantidad, 0);
+            carritoCantidad.textContent = totalItems;
+            carritoTotalSpan.textContent = total.toFixed(2) + ' Lps';
+        }
+
+        function verCarrito() {
+            modal.style.display = 'block';
+        }
+
+        span.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        btnOrdenar.onclick = async function() {
+            if (carrito.length === 0) {
+                alert('El carrito está vacío');
+                return;
+            }
+
+            try {
+                const datos = {
+                    productos: carrito.map(item => ({
+                        id: item.id,
+                        cantidad: item.cantidad,
+                        precio: item.precio
+                    })),
+                    total: carrito.reduce((sum, item) => sum + (item.precio * item.cantidad), 0)
+                };
+
+                console.log('Datos a enviar:', datos);
+
+                const response = await fetch('./guardar_orden.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(datos)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const responseText = await response.text();
+                console.log('Respuesta del servidor:', responseText);
+
+                let data;
+                try {
+                    data = JSON.parse(responseText);
+                } catch (e) {
+                    console.error('Error al parsear la respuesta:', e);
+                    throw new Error('La respuesta del servidor no es un JSON válido');
+                }
+
+                if (data.success) {
+                    alert('¡Orden realizada con éxito!');
+                    carrito = [];
+                    actualizarCarritoUI();
+                    modal.style.display = 'none';
+                    
+                    // Resetear todos los contadores
+                    document.querySelectorAll('.cantidad').forEach(span => {
+                        span.textContent = '0';
+                    });
+                } else {
+                    throw new Error(data.message || 'Error desconocido al procesar la orden');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error al procesar la orden: ' + error.message);
+            }
+        }
+    </script>
+</body>
+</html> 
